@@ -1,2 +1,4 @@
-fastapi[all]
-transformers[torch]
+fastapi
+uvicorn
+transformers
+torch
