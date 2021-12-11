@@ -1,5 +1,3 @@
--f https://download.pytorch.org/whl/torch_stable.html
 fastapi
 uvicorn
-transformers
-torch==1.9.0+cpu
+transformers[torch]
