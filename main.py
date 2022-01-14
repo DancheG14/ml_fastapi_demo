@@ -10,7 +10,7 @@ classifier = pipeline("sentiment-analysis")
 
 @app.get("/")
 def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello UrFu"}
 
 @app.post("/predict/")
 def predict(item: Item):
