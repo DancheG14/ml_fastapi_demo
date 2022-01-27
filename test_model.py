@@ -16,7 +16,7 @@ def test_read_predict_positive():
     json_data = response.json() 
 
     assert response.status_code == 200
-    assert json_data['label'] == 'LABEL_1'
+    assert json_data['label'] == 'LABEL_0'
 
 def test_read_predict_negative():
     response = client.post("/predict/",
@@ -25,7 +25,7 @@ def test_read_predict_negative():
     json_data = response.json() 
 
     assert response.status_code == 200
-    assert json_data['label'] == 'LABEL_0'
+    assert json_data['label'] == 'LABEL_1'
                                
 #def test_read_predict_neutral():
     #response = client.post("/predict/",
