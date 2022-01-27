@@ -29,7 +29,7 @@ def test_read_predict_negative():
                                
 def test_read_predict_neutral():
     response = client.post("/predict/",
-        json={"text": "nothing"}
+        json={"text": "My name Cougar"}
     )
     json_data = response.json() 
 
